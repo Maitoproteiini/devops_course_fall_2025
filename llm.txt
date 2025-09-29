@@ -1,0 +1,30 @@
+Otto-Harald Hirvonen		29.9.2025
+291 991
+COMP.SE.140
+Continuous Development and Deployment - DevOps
+The Use of AI in Exercise 1
+
+
+I used Chat-GPT model GPT-5 in completing exercise 1. The main motivation was to help getting the work started and to save time writing simple code.
+When starting any project, the task ahead always seems insurmountable. It takes a lot of effort to fully comprehend the requirements and to divide the project into smaller steps.
+It’s easy to lose focus right in the beginning.
+
+I’ve found that discussing the project with an LLM right at the start keeps my focus. I only first must skim the project requirements and let the LLM read it,
+before I begin by asking higher level questions to verify, I have the general idea of the task ahead. That is precisely what I did here. 
+I then read the exercise document again with a deeper focus to make sure the LLM did not hallucinate.
+
+Next, I divided the exercise into general steps I needed to take. I then asked the LLM to produce a very small code skeleton for just one service.
+Then I began to populate the service with more detailed code letting the LLM verify the code I made in small steps. 
+This cycle then continued until the codebase was ready for testing. For testing I asked the LLM to generate a testing script that I could run to make sure the implementation worked.
+
+LLM helped me to find a productive rhythm and to keep me on track. This way I never made or had any big mistakes or misunderstandings that would have snowballed into bigger problems and wasted time.
+In addition, AI helped me to learn the topic in more detail. If I didn’t understand a portion of the exercise or why my code was not working,
+chat-GPT would provide an answer in the proper difficulty level. Finally, the LLM helped me immensely when debugging errors.
+It would instantly recognize what part of the code or shell commands were wrong.
+
+Since I asked simple questions and small code snippets, I didn’t find the LLM to make any mistakes. I’ve noticed that when the code asked for is large and spanning multiple files,
+that is when the models lose track and make mistakes. Also, the user knows less about the code and is more prone to misunderstand the issues resulting from the poor code.
+
+The LLM couldn’t provide solutions related to problems occurring due to the development environment.
+Chat-GPT cannot see how my files and folders are laid out nor can it see what packages and which versions are installed.
+When problems in the environment occurred, the LLM could not help without specific list of the specs of the environment.
