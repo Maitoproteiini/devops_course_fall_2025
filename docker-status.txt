@@ -1,0 +1,12 @@
+# Result of docker container ls
+CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS              PORTS                                         NAMES
+4370a7745d2b   exercise_1-service1   "uvicorn app.main:ap…"   2 minutes ago   Up About a minute   0.0.0.0:8199->8199/tcp, [::]:8199->8199/tcp   service1
+d73329f0475d   exercise_1-storage    "uvicorn app.main:ap…"   2 minutes ago   Up About a minute   8080/tcp                                      storage
+f3c683d1f4a0   exercise_1-service2   "docker-entrypoint.s…"   2 minutes ago   Up About a minute   8081/tcp                                      service2
+
+# Result of docker network ls
+NETWORK ID     NAME                 DRIVER    SCOPE
+fc66523ecc16   bridge               bridge    local
+e590fb3955b1   exercise_1_backend   bridge    local
+ec707440229c   host                 host      local
+212d89d1a559   none                 null      local
