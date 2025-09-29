@@ -1,0 +1,41 @@
+services:
+  service1:
+    build: ./service1
+    container_name: service1
+    ports:
+      - "8199:8199"
+    environment:
+      - SERVICE2_URL=http://service2:8081
+      - STORAGE_URL=http://storage:8080
+    depends_on:
+      - service2
+    networks:
+      - backend
+    volumes:
+      - ./vstorage:/data/vstorage
+
+  service2:
+    build: ./service2
+    container_name: service2
+    networks:
+      - backend
+    environment:
+    - STORAGE_URL=http://storage:8080
+    volumes:
+      - ./vstorage:/data/vstorage
+
+  storage:
+    build: ./storage
+    container_name: storage
+    expose:
+      - "8080"
+    networks: [backend]
+    volumes:
+      - storage_data:/data
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  storage_data:

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+service2/node_modules/
+npm-debug.log*
+
+vstorage/log.txt
+docker-status.txt
+*.log
+
+.vscode/
+.idea/
